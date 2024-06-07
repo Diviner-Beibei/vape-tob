@@ -11,3 +11,41 @@
   -ms-overflow-style: none; /* 对于IE和Edge */
   scrollbar-width: none; /* 对于Firefox */
 }
+
+/*修改轮播图 Navigation 按钮样式*/
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.15
+  ) !important; /* 使用!important确保覆盖默认样式 */
+  width: 48px !important; /* 调整宽度 */
+  height: 48px !important; /* 调整高度 */
+  border-radius: 50%; /* 圆形按钮 */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white; /* 修改箭头颜色 */
+  font-size: 20px !important;
+}
+
+/* 隐藏Navigation按钮 */
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev {
+  display: none;
+}
+
+/* 父元素悬浮时显示Navigation按钮 */
+.swiper-container:hover .swiper-button-next,
+.swiper-container:hover .swiper-button-prev {
+  display: flex;
+}
+
+/* 隐藏不可用的Navigation按钮 */
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  display: none !important;
+}
