@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 在你的全局CSS文件中添加 */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* 对于Webkit浏览器 */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* 对于IE和Edge */
+  scrollbar-width: none; /* 对于Firefox */
+}
