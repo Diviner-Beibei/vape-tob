@@ -22,7 +22,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="h-dvh group">
+    <section className="h-dvh group section-hero">
       <div className="relative h-full">
         <Image
           src={images[currentIndex]}
