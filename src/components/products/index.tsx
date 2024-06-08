@@ -48,9 +48,10 @@ export default function ProductsList({ lng }: ProductProps) {
         <Swiper
           spaceBetween={10} // 设置滑块之间的间距
           slidesPerView={5} // 设置每次视图中显示的滑块数量
-          // centeredSlides={true} // 开启居中显示
-          // loop={true}
-          pagination={true}
+          pagination={{
+            clickable: true,
+          }}
+          // pagination={true}
           navigation={true}
           modules={[Navigation, Pagination]}
           className="w-full"
