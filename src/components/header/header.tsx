@@ -62,9 +62,10 @@ export default function Header({ lng }: HeaderProps) {
         </div>
         <ul className="flex  items-center gap-8 text-[#4D4D4D] text-sm font-medium mr-52">
           <NavItem text="Products" url={`/${lng}/products`} />
-          <NavItem text="support" url={`/${lng}/support`} />
+          <NavItem text="Support" url={`/${lng}/support`} />
           <NavItem text="About" url={`/${lng}/about`} />
-          <NavItem text="Contact us" url={`/${lng}/contact`} />
+          <NavItem text="Contact Us" url={`/${lng}/contact`} />
+          <NavItem text="Blog" url={`/${lng}/blogs`} />
         </ul>
         <div>
           <FaGlobe className="w-5 h-5" />

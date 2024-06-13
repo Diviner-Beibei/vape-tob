@@ -51,7 +51,6 @@ export default function ProductsList({ lng }: ProductProps) {
           pagination={{
             clickable: true,
           }}
-          // pagination={true}
           navigation={true}
           modules={[Navigation, Pagination]}
           className="w-full"

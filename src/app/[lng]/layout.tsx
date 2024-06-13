@@ -6,7 +6,7 @@ import Header from "@/components/header/header";
 import Footer from "@/components/footer";
 
 import { languages } from "@/lib/i18n/settings";
-import { roboto, arima } from "@/utils/fonts";
+import { roboto, arima, openSans, oswald } from "@/utils/fonts";
 import Warning from "@/components/warning";
 
 export async function generateStaticParams() {
@@ -30,7 +30,10 @@ export default function RootLayout({
   };
 }>) {
   return (
-    <html lang={lng} className={`${arima.variable} ${roboto.variable}`}>
+    <html
+      lang={lng}
+      className={`${arima.variable} ${openSans.variable} ${oswald.variable} ${roboto.variable}`}
+    >
       <body className={inter.className}>
         <Warning />
         <Header lng={lng} />
