@@ -5,13 +5,8 @@ import "../globals.css";
 import Header from "@/components/header/header";
 import Footer from "@/components/footer";
 
-import { languages } from "@/lib/i18n/settings";
 import { roboto, arima, openSans, oswald } from "@/utils/fonts";
 import Warning from "@/components/warning";
-
-export async function generateStaticParams() {
-  return languages.map((lng) => ({ lng }));
-}
 
 const inter = Inter({ subsets: ["latin"] });
 

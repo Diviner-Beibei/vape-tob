@@ -1,0 +1,62 @@
+/* BlogContent.module.css */
+
+/* 基本文本样式 */
+.blog-content {
+  color: #333;
+  line-height: 1.8;
+}
+
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  color: #1e2d7d;
+  font-weight: 500;
+}
+
+.blog-content h2 {
+  font-size: 26px;
+}
+.blog-content h3 {
+  font-size: 24px;
+}
+.blog-content h4 {
+  font-size: 22px;
+}
+
+/* 段落样式 */
+.blog-content p {
+  margin-bottom: 1rem;
+}
+
+/* 链接样式 */
+.blog-content a {
+  color: #007bff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.blog-content a:hover {
+  color: #0056b3;
+}
+
+/* 引用样式 */
+.blog-content blockquote {
+  padding: 1rem;
+  margin: 0 0 2rem 0;
+  background-color: #f9f9f9;
+  border-left: 5px solid #ccc;
+}
+
+/* 代码块样式 */
+.blog-content pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.blog-content code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

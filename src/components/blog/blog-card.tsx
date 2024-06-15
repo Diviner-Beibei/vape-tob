@@ -1,10 +1,10 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 interface BlogCardProps {
   lng: string;
   id: string;
-  imgUrl: StaticImageData;
+  imgUrl: string;
   title: string;
   date: string;
   description: string;
@@ -28,11 +28,13 @@ export default function BlogCard({
           src={imgUrl}
           alt=""
           style={{ objectFit: "cover" }}
+          width={414}
+          height={276}
           className="h-64"
         />
       </Link>
 
-      <Link href={""}>
+      <Link href={`/${lng}/blogs/${id}`}>
         <h3 className="text-[22px] text-[#1e2d7d] font-openSans font-semibold mb-1">
           {title}
         </h3>
@@ -40,7 +42,7 @@ export default function BlogCard({
 
       <p className="text-sm text-[#677279] mb-2">{date}</p>
       <div className="text-[#677279] break-words text-base font-openSans">
-        {description}
+        {description}...
       </div>
     </div>
   );

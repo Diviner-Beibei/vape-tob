@@ -1,6 +1,6 @@
 export default function JoinUs() {
   return (
-    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded mt-24">
+    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded max-h-96 flex justify-center items-center ">
       <div className="flex flex-col justify-center items-center gap-5 text-white py-10 ">
         <h3 className="text-2xl font-medium">Join Us</h3>
         <p className="text-base mb-5 break-words px-6 text-center">
